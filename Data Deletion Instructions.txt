@@ -1,0 +1,22 @@
+User Data Deletion Instructions for the "Keep Your Word" App
+
+At "Keep Your Word", we take user privacy and data security seriously. Users who sign in with Facebook have the option to delete their account and associated data from our system at any time. When a user deletes their account through our 
+app, the following steps are taken to ensure all of their data is removed from both Firebase Realtime Database and Firebase Authentication:
+
+Firebase Authentication Deletion:
+Upon initiating account deletion, the user's authentication credentials, including the Facebook login association, will be permanently deleted from Firebase Authentication. 
+This ensures that the user’s account is no longer accessible via their Facebook login.
+
+User Profile and Data Removal from Firebase Realtime Database:
+In addition to removing authentication credentials, all associated user data stored in the Firebase Realtime Database, such as their unique user ID, 
+profile information (name, email, and profile picture URL), and any data linked to their usage of the app, will be deleted. The data is stored under a sanitized version of the user's email (where . is replaced with ,), 
+which will also be removed during this process.
+
+Process for Users to Delete Their Account:
+
+Users can initiate the deletion process by navigating to the "Settings" section of the app and selecting the "Delete Account" option.
+Once confirmed, both the authentication data and all profile data will be deleted automatically and immediately.
+Manual Deletion Request (Alternative):
+
+Users can also request their account deletion by contacting our support team directly at support@keepyourwordapp.com. Upon receiving a request, 
+we will manually delete the user's data from both Firebase Authentication and Firebase Realtime Database within 48 hours.
